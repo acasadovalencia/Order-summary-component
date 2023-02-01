@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap');
+:root{
+    --pale-blue-color:hsl(225, 100%, 94%);
+    --bright-blue-color:hsl(245, 75%, 52%);
+    --bright-blue-hover-color:hsl(245, 73%, 46%);
+    --very-pale-blue-color: hsl(225, 100%, 98%);
+    --desatured-blue-color: hsl(224, 23%, 55%);
+    --dark-blue-color:hsl(223, 47%, 23%);
+    --white-color: #fff;
+    --redhat-font:'Red Hat Display', sans-serif;
+    font-size: 62.5%; /* Scaling 1rem = 1px for better transform px in rem */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: var(--redhat-font);
+    font-size: 1.6rem;
+    background-color: var(--pale-blue-color);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+main{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    width: 38rem;
+    background-color: var(--white-color);
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.top__img{
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+.heading{
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--dark-blue-color);
+}
+.paragraph{
+    padding: 1rem 1rem;
+    margin: 1rem 4rem;
+    text-align: center;
+    color: var(--desatured-blue-color);
+    font-size: 1.5rem;
+}
+.plan__selection{
+    display: flex;
+    width: 75%;
+    background-color: var(--very-pale-blue-color);
+    justify-content: space-between;
+    align-items: center;
+    height:8rem;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    padding: 0rem 1.5rem;
+    
+}
+.plan__prices{
+    margin: 1rem;
+    float: left;
+}
+.plan{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    float: left;
+}
+.price{
+    font-size: 1.4rem;
+    color: var(--desatured-blue-color);
+}
+
+.change__link{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--bright-blue-color);
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.payment__btn{
+    width: 75%;
+    background-color: var(--bright-blue-color);
+    color: var(--white-color);
+    font-family: var(--redhat-font);
+    font-weight: 200;
+    border: none;
+    height: 4rem;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    -webkit-box-shadow: 0px 17px 18px 2px rgba(212,212,212,0.88);
+    -moz-box-shadow: 0px 17px 18px 4px rgba(212,212,212,0.88);
+    box-shadow: 0px 17px 18px 4px rgba(212,212,212,0.88);
+    cursor: pointer;
+}
+.payment__btn:hover{
+    background-color: var(--bright-blue-hover-color);
+    transition: 0.5s;
+}
+.payment__btn:active{
+    transform: translateY(.2rem)
+}
+.cancel__btn{
+    width: 75%;
+    color: var(--desatured-blue-color);
+    font-family: var(--redhat-font);
+    font-weight: 200;
+    border: none;
+    height: 4rem;
+    border-radius: 1rem;
+    margin: 3rem 0;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+.cancel__btn:hover{
+    color: var(--bright-blue-color)
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+@media screen and (max-width:400px){
+    .container{
+        width: 35rem;
+    
+}
+.payment__btn{
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(212,212,212,0.88);
+    -moz-box-shadow: 0px 5px 10px 4px rgba(212,212,212,0.88);
+    box-shadow: 0px 5px 10px 4px rgba(212,212,212,0.88);
+
+}
+.cancel__btn{
+    margin: 1.5rem 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
